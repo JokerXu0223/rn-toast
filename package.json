@@ -1,6 +1,6 @@
 {
   "name": "js-root-toast",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "toast for react-native",
   "main": "src/index.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/JokerXu0223/rn-toast#readme",
   "dependencies": {
-    "react-native-root-siblings": "^3.1.0"
+    "react-native-root-siblings": "2.2.0"
   }
 }
