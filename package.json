@@ -1,5 +1,5 @@
 {
-  "name": "js-rn-toast",
+  "name": "js-root-toast",
   "version": "0.1.0",
   "description": "toast for react-native",
   "main": "src/index.js",
