@@ -30,6 +30,7 @@ class Toast extends React.PureComponent {
       {...this.props}
       duration={0}
     />);
+    global.$RootToast = this.toast;
   };
 
   componentWillReceiveProps = (nextProps) => {
@@ -41,6 +42,7 @@ class Toast extends React.PureComponent {
 
   componentWillUnmount = () => {
     this.toast.destroy();
+    global.$RootToast = this.toast;
   };
 
   render() {
