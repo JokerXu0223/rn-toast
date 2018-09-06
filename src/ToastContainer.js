@@ -99,7 +99,7 @@ class ToastContainer extends React.PureComponent {
     if (!this.animating) {
       clearTimeout(this.hideTimeout);
       this.animating = true;
-      this.root.setNativeProps({
+      this.root && this.root.setNativeProps({
         pointerEvents: 'auto',
       });
       this.props.onShow && this.props.onShow(this.props.siblingManager);
@@ -123,7 +123,7 @@ class ToastContainer extends React.PureComponent {
     clearTimeout(this.showTimeout);
     clearTimeout(this.hideTimeout);
     if (!this.animating) {
-      this.root.setNativeProps({
+      this.root && this.root.setNativeProps({
         pointerEvents: 'none',
       });
       this.props.onHide && this.props.onHide(this.props.siblingManager);
