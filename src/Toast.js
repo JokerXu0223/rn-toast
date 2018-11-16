@@ -42,7 +42,7 @@ class Toast extends React.PureComponent {
 
   componentWillUnmount = () => {
     this.toast.destroy();
-    global.$RootToast = this.toast;
+    global.$RootToast = null;
   };
 
   render() {
