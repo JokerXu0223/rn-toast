@@ -8,14 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JokerXu0223/rn-toast.git"
+    "url": "https://github.com/JustinXu0223/rn-toast.git"
   },
   "author": "justinxu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JokerXu0223/rn-toast/issues"
+    "url": "https://github.com/JustinXu0223/rn-toast/issues"
   },
-  "homepage": "https://github.com/JokerXu0223/rn-toast#readme",
   "dependencies": {
     "react-native-root-siblings": "2.2.0"
   }

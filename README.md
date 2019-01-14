@@ -1,13 +1,15 @@
 
+如何在项目中使用toast
+
 ```html
 import React from 'react';
 import styled from 'styled-components';
-import RootToast from 'js-rn-toast';
+import RootToast from 'js-rn-toast'; // <-- add this
 
 // static source 
-import succeedIcon from '../img/succeed.png';
-import warningIcon from '../img/warning.png';
-import errorIcon from '../img/error.png';
+import succeedIcon from '../img/succeed.png'; // <-- add icon
+import warningIcon from '../img/warning.png'; // <-- add icon
+import errorIcon from '../img/error.png'; // <-- add icon
 
 const ContainerView = styled.View`
   width: 181px;
