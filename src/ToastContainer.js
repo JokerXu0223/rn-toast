@@ -14,14 +14,18 @@ import {
 
 const TOAST_MAX_WIDTH = 0.8;
 const TOAST_ANIMATION_DURATION = 200;
-const DIMENSION = Dimensions.get('window');
+
+function getScreenInfo() {
+  const { width, height } = Dimensions.get('window');
+  return { width, height };
+}
+
 let KEYBOARD_HEIGHT = 0;
 
 Keyboard.addListener('keyboardDidChangeFrame', ({ endCoordinates }) => {
-  KEYBOARD_HEIGHT = DIMENSION.height - endCoordinates.screenY;
+  KEYBOARD_HEIGHT = getScreenInfo().height - endCoordinates.screenY;
 });
 
-const WINDOW_WIDTH = DIMENSION.width;
 const positions = {
   TOP: 20,
   BOTTOM: -20,
@@ -33,26 +37,28 @@ const durations = {
   SHORT: 2000,
 };
 
-const styles = StyleSheet.create({
-  defaultStyle: {
-    position: 'absolute',
-    width: WINDOW_WIDTH,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  containerStyle: {
-    padding: 13,
-    backgroundColor: '#000000',
-    opacity: 0.7,
-    borderRadius: 5.5,
-    marginHorizontal: WINDOW_WIDTH * ((1 - TOAST_MAX_WIDTH) / 2),
-  },
-  textStyle: {
-    fontSize: 16,
-    color: '#fff',
-    textAlign: 'center',
-  },
-});
+const styles = () => (
+  StyleSheet.create({
+    defaultStyle: {
+      position: 'absolute',
+      width: getScreenInfo().width,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    containerStyle: {
+      padding: 13,
+      backgroundColor: '#000000',
+      opacity: 0.7,
+      borderRadius: 5.5,
+      marginHorizontal: getScreenInfo().width * ((1 - TOAST_MAX_WIDTH) / 2),
+    },
+    textStyle: {
+      fontSize: 16,
+      color: '#fff',
+      textAlign: 'center',
+    },
+  })
+);
 
 class ToastContainer extends React.PureComponent {
   static displayName = 'ToastContainer';
@@ -160,7 +166,7 @@ class ToastContainer extends React.PureComponent {
     return (this.state.visible || this.animating) ?
       <View
         style={[
-          styles.defaultStyle,
+          styles().defaultStyle,
           position,
         ]}
         pointerEvents="box-none"
@@ -172,7 +178,7 @@ class ToastContainer extends React.PureComponent {
         >
           <Animated.View
             style={[
-              styles.containerStyle,
+              styles().containerStyle,
               backgroundColor && { backgroundColor },
               shadow && shadowStyle,
               containerStyle,
@@ -189,7 +195,7 @@ class ToastContainer extends React.PureComponent {
               ) : (
                 <Text
                   style={[
-                    styles.textStyle,
+                    styles().textStyle,
                     textStyle,
                     textColor && { color: textColor },
                   ]}
