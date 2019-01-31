@@ -1,0 +1,35 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "react react-native toast",
+  "main": "index.js",
+  "author": "Justin Xu",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "setup": "yarn install && react-native link",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "react-native run-android --appIdSuffix=debug --no-packager && adb reverse tcp:8081 tcp:8081",
+    "ios": "react-native run-ios",
+    "iPhoneX": "react-native run-ios --simulator 'iPhone X'",
+    "test": "jest",
+    "clear": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && yarn install && yarn start -- --reset-cache"
+  },
+  "dependencies": {
+    "js-root-toast": "^0.2.0",
+    "prop-types": "^15.6.2",
+    "react": "16.6.3",
+    "react-native": "0.58.3",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.0.0",
+    "jest": "24.0.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
