@@ -12,7 +12,7 @@
 `import RootToast from 'js-root-toast';`
 
 ## gif
-![gif](https://github.com/JustinXu0223/react-native-toast/example/toast.gif)
+![gif](https://github.com/JustinXu0223/react-native-toast/raw/master/example/toast.gif)
 
 ## example
 
