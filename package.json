@@ -1,6 +1,6 @@
 {
   "name": "js-root-toast",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "toast for react-native",
   "main": "src/index.js",
   "scripts": {
@@ -17,5 +17,10 @@
   },
   "dependencies": {
     "react-native-root-siblings": "2.2.0"
-  }
+  },
+  "keywords": [
+    "react-native",
+    "toast",
+    "style-components"
+  ]
 }

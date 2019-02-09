@@ -11,18 +11,19 @@
 
 `import RootToast from 'js-root-toast';`
 
-## gif
+## Gif
 ![gif](https://github.com/JustinXu0223/react-native-toast/raw/master/example/toast.gif)
 
-## example
+## Example code
+`
+>1). $ example/src/utils/toast.js  <-- this;
 
-`
-example/src/utils/toast.js  <-- this;
-example/src/App.js
+>2). $ example/src/App.js
 `
 
-## see example
+## Start
 `
-$ cd example && yarn setup && yarn start
-$ cd example && yarn ios
+>1). $ cd example && yarn setup && yarn start
+
+>2). $ cd example && yarn ios
 `
