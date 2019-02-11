@@ -1,6 +1,6 @@
 {
   "name": "js-root-toast",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "toast for react-native",
   "main": "src/index.js",
   "scripts": {
@@ -8,15 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JustinXu0223/rn-toast.git"
+    "url": "https://github.com/JustinXu0223/react-native-toast.git"
   },
   "author": "Justin Xu",
   "license": "MIT",
+  "files": [
+    "/src"
+  ],
   "bugs": {
-    "url": "https://github.com/JustinXu0223/rn-toast/issues"
+    "url": "https://github.com/JustinXu0223/react-native-toast/issues"
   },
   "dependencies": {
     "react-native-root-siblings": "2.2.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "example"
+    ]
   },
   "keywords": [
     "react-native",
