@@ -147,6 +147,7 @@ class ToastContainer extends React.PureComponent {
   };
   render() {
     const {
+      duration,
       position: offset,
       backgroundColor,
       shadow,
@@ -169,7 +170,7 @@ class ToastContainer extends React.PureComponent {
           styles().defaultStyle,
           position,
         ]}
-        pointerEvents="box-none"
+        pointerEvents={duration ? "box-none" : "auto"}
       >
         <TouchableWithoutFeedback
           onPress={
