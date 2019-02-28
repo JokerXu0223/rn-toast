@@ -63,7 +63,8 @@ const Toast = {
   basicToast(content, { position = 0, duration = 2000, ...restProps } = {}, callback) {
     // only show one
     if (this.toast) {
-      this.hide();
+      this.hide(callback);
+      this.clearTime();
     }
     this.toast = RootToast.show(content, {
       position,

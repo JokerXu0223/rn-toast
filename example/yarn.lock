@@ -3613,10 +3613,10 @@ jest@24.0.0-alpha.6:
     import-local "^2.0.0"
     jest-cli "^24.0.0-alpha.6"
 
-js-root-toast@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/js-root-toast/-/js-root-toast-0.2.0.tgz#c06a976c8c0887535994acb51e39b38ac08621dd"
-  integrity sha512-G1+MBzjCUnwkZCOoeq4sXh48SqORxVQT0iwm7vwiKGB6sYLJnUJxcNdl7MAVhrt6brEkztBv5hSn//KWHxKLmQ==
+js-root-toast@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/js-root-toast/-/js-root-toast-0.2.4.tgz#928fa554370c8000468e4f119cc67fa6cc62f9ed"
+  integrity sha512-5n6b/EOVk3CI8dax4eUBhUcE2L8mcqr7wXJjqz3gnkfLMAy4khO3hco5wHwxt9mC+ngNMEyvG1lzWAYp+DCEag==
   dependencies:
     react-native-root-siblings "2.2.0"
 

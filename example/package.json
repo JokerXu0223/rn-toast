@@ -16,7 +16,7 @@
     "clear": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && yarn install && yarn start -- --reset-cache"
   },
   "dependencies": {
-    "js-root-toast": "^0.2.0",
+    "js-root-toast": "^0.2.4",
     "prop-types": "^15.6.2",
     "react": "16.6.3",
     "react-native": "0.58.3",
